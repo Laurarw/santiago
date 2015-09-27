@@ -7,7 +7,7 @@ if(!isset($_SESSION)){
 
  if($_SERVER['REQUEST_METHOD'] == 'POST')
   	{
-		$pdo = new PDO('mysql:host=localhost;dbname=registros','root','lala123');
+		$pdo = new PDO('mysql:host=localhost;dbname=banco','root','lala123');
 
 		$sql = "INSERT INTO usuarios (apellido, nombre, dni, sexo, nacionalidad)
 				values (:apellido, :nombre ,:dni, :sexo, :nacionalidad)";
